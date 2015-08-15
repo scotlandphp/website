@@ -18,7 +18,7 @@ $(document).ready(function(){
     groups.forEach(function(groupId) {
         $.ajax({
             type: 'GET',
-            url: 'http://opentechcalendar.co.uk/api1/group/'+groupId+'/events.jsonp?callback=?',
+            url: 'https://opentechcalendar.co.uk/api1/group/'+groupId+'/events.jsonp?callback=?',
             async: false,
             jsonpCallback: 'func'+groupId,
             contentType: 'application/json',
