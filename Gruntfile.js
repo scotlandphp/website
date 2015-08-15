@@ -19,9 +19,9 @@ module.exports = function (grunt) {
                         src: [
                             'index.html',
                             'email-confirm.html',
-                            '401.html',
-                            '404.html',
-                            '503.html',
+                            '401error.html',
+                            '404error.html',
+                            '503error.html',
                             '*.png',
                             '*.ico',
                             'browserconfig.xml',
