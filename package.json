@@ -1,0 +1,36 @@
+{
+  "name": "scotlandphp-website",
+  "homepage": "https://www.scotlandphp.co.uk",
+  "version": "1.0.0",
+  "description": "Scotland PHP Website",
+  "license": "Creative Commons Attribution 3.0 Unported",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scotlandphp/website.git"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": ">=0.0.2",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": ">=0.4.0",
+    "grunt-useref": ">=0.0.12"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "PHP",
+    "Scotland"
+  ],
+  "author": "Engineor LTD (https://www.engineor.com)",
+  "contributors": [
+    {
+      "name": "Thomas Dutrion",
+      "email": "thomas@engineor.com",
+      "url": "https://www.engineor.com"
+    },
+    {
+      "name": "Aline Delvallé",
+      "email": "aline@engineor.com",
+      "url": "https://www.engineor.com"
+    }
+  ]
+}
