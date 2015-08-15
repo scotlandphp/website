@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         useref: {
             html: 'dist/*.html',
-            temp: 'temp'
+            temp: 'dist'
         },
         copy: {
             main: {
@@ -36,7 +36,12 @@ module.exports = function (grunt) {
                         src: [
                             'images/*.png',
                             'images/*.jpg',
-                            'assets/css/images/**/*'
+                            'assets/css/images/**/*',
+                            'assets/css/ie9.css',
+                            'assets/css/leaflet.css',
+                            'assets/js/ie/respond.min.js',
+                            'assets/css/font-awesome.min.css',
+                            'assets/fonts/*'
                         ],
                         dest: 'dist',
                         filter: 'isFile'
@@ -46,12 +51,32 @@ module.exports = function (grunt) {
         },
         clean: {
             build: ['dist/assets']
+        },
+        cdnify: {
+            build: {
+                options: {
+                    rewriter: function (url) {
+                        var regex = new RegExp('^(?:[a-z]+:)?//', 'i');
+                        if (regex.test(url)) {
+                            return url;
+                        }
+                        return url.substring(url.lastIndexOf('/')+1);
+                    }
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'dist',
+                    src: '*.{css,html}',
+                    dest: 'dist'
+                }]
+            }
         }
     });
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-useref');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-cdnify');
 
-    grunt.registerTask('build', ['copy', 'useref', 'concat', 'uglify', 'cssmin', 'clean']);
+    grunt.registerTask('build', ['copy', 'useref', 'concat', 'uglify', 'cssmin', 'clean', 'cdnify']);
 };
