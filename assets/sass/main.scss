@@ -559,11 +559,28 @@ $lg: 1200px;
           min-height: 125px;
 		}
 	  }
-	  article:last-child {
+      article:last-child {
         a {
           padding-top: 5%;
         }
-	  }
+      }
+      header {
+        h3 {
+          a {
+            small {
+              font-size: .7em;
+              color: gray;
+            }
+          }
+        }
+        ul {
+          li {
+            a {
+              font-size: 1em;
+            }
+          }
+        }
+      }
 	}
 
 /* Icons */
@@ -783,7 +800,7 @@ $lg: 1200px;
 			&.one {
 				background-color: #81918E;
 				background-image: url('../../images/landscape.jpg');
-			  	height: 100vh;
+			  	min-height: 100vh;
 			}
 
 			&.two {
@@ -1192,7 +1209,9 @@ $lg: 1200px;
               #groups {
                 article:last-child {
                   a {
-                    padding-top: 15%;
+                    @media screen and (min-height: $sm) {
+                      padding-top: 15%;
+                    }
                     span {
                       font-size: 4em;
                     }
@@ -1227,7 +1246,13 @@ $lg: 1200px;
     }
     article {
       > a {
-        height: 238px;
+        height: 150px;
+        @media screen and (min-width: $xs), (max-height: $xs) {
+          img {
+            width: 50%;
+            margin: auto;
+          }
+        }
       }
     }
   }

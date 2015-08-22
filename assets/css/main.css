@@ -1563,6 +1563,11 @@ button,
   min-height: 125px; }
 #groups article:last-child a {
   padding-top: 5%; }
+#groups header h3 a small {
+  font-size: .7em;
+  color: gray; }
+#groups header ul li a {
+  font-size: 1em; }
 
 /* Icons */
 .icon {
@@ -1725,7 +1730,7 @@ button,
     #main > section.one {
       background-color: #81918E;
       background-image: url("../../images/landscape.jpg");
-      height: 100vh; }
+      min-height: 100vh; }
     #main > section.two {
       background-color: #f5fafa; }
     #main > section.three {
@@ -1991,11 +1996,13 @@ button,
   #main section.cover {
     padding: 4em 0em; }
     #main section.cover header {
-      padding: 0 1em; }
+      padding: 0 1em; } }
+@media screen and (max-width: 736px) and (min-height: 768px) {
   #main #groups article:last-child a {
-    padding-top: 15%; }
-    #main #groups article:last-child a span {
-      font-size: 4em; }
+    padding-top: 15%; } }
+@media screen and (max-width: 736px) {
+  #main #groups article:last-child a span {
+    font-size: 4em; }
 
   /* Footer */
   #footer .copyright li {
@@ -2010,7 +2017,12 @@ button,
   #groups article:first-child {
     height: 373px; }
   #groups article > a {
-    height: 238px; } }
+    height: 150px; } }
+  @media screen and (max-width: 768px) and (min-width: 480px), screen and (max-width: 768px) and (max-height: 480px) {
+    #groups article > a img {
+      width: 50%;
+      margin: auto; } }
+
 @media screen and (min-width: 768px) {
   #groups article:first-child {
     height: 231px; }

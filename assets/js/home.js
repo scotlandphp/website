@@ -14,7 +14,7 @@ $(document).ready(function(){
     markerDu.bindPopup("<h3>Dundee PHP</h3><strong>Drouthy's</strong><br>142 -146 Perth Rd<br>Dundee, Angus DD1 4JW");
     markerAb.bindPopup("<h3>Aberdeen PHP</h3><strong>Fifth Ring Ltd</strong><br>St Marys Court<br> 47-49 Huntly St<br> Aberdeen AB10 1TH");
 
-    var groups = ['272', '17', '203'];
+    var groups = ['272', '296', '17', '203'];
     groups.forEach(function(groupId) {
         $.ajax({
             type: 'GET',
