@@ -14,7 +14,10 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.7/ie8.js"/><![endif]-->
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+        <!-- build:css styles.ie9.<%= new Date().getTime() %>.min.css -->
+        <link rel="stylesheet" href="assets/css/ie9.css"/>
+        <!-- endbuild -->
+    <![endif]-->
     <!-- build:css styles.<%= new Date().getTime() %>.min.css -->
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="assets/css/leaflet.css" />
@@ -354,7 +357,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 
 <!--[if lte IE 8]>
-<script src="assets/js/ie/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
 </body>
