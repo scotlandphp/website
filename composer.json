@@ -1,0 +1,36 @@
+{
+    "name": "scotlandphp/website",
+    "description": "Static website for ScotlandPHP (fetching data from APIs in Javascript)",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "email": "thomas@engineor.com",
+        "issues": "https://github.com/scotlandphp/website/issues",
+        "wiki": "https://github.com/scotlandphp/website/wiki",
+        "source": "https://github.com/scotlandphp/website"
+    },
+    "authors": [
+        {
+            "name": "Thomas Dutrion",
+            "email": "thomas@engineor.com",
+            "homepage": "https://www.engineor.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Aline Delvallé",
+            "email": "aline@engineor.com",
+            "homepage": "https://www.engineor.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "codegyre/robo": "*@dev",
+        "leafo/scssphp": "~0.1",
+        "patchwork/jsqueeze": "~1.0",
+        "natxet/CssMin": "~3.0"
+    },
+    "scripts": {
+        "exec": "vendor/bin/robo"
+    }
+}
