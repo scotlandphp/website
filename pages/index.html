@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Scotland PHP - User groups in Scotland</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.7/ie8.js"/>
+    <![endif]-->
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="../assets/css/ie9.css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#e1e1e1">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar62"><img src="elephpant.png" alt="scottish elephpant"/></span>
+
+            <h1 id="title">Scotland PHP</h1>
+
+            <p>Wee site, big community</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            <ul>
+                <li><a href="#groups" id="groups-link" class="skel-layers-ignoreHref"><span class="icon fa-group">User Groups</span></a></li>
+                <li><a href="#events" id="events-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Upcoming events</span></a></li>
+                <!--<li><a href="#sponsors" id="sponsors-link" class="skel-layers-ignoreHref"><span class="icon fa-thumbs-up">Sponsors</span></a></li>-->
+                <!--<li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-youtube-play">Videos / Photos</span></a></li>-->
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact Us</span></a></li>
+                <li><a href="#speaker" id="speaker-link" class="skel-layers-ignoreHref"><span class="icon fa-microphone">Become a speaker</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="bottom">
+        <div id="newsletter">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="https://scotlandphp.us6.list-manage.com/subscribe/post?u=799820d20b8ae2d3d0ebb05aa&amp;id=6d4e81a67e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll row">
+                        <label for="mce-EMAIL" class="sr-only">Don't miss, get the newsletter!</label>
+                        <input type="email" value="" name="EMAIL" class="email 8u" id="mce-EMAIL" placeholder="Get the newsletter!" required>
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_799820d20b8ae2d3d0ebb05aa_6d4e81a67e" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button 4u">
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+        </div>
+        <!-- Social Icons -->
+        <ul class="icons">
+            <li><a href="https://github.com/scotlandphp" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://twitter.com/scotlandphp" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/ScottishPUGs" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.youtube.com/c/ScotlandphpUkUserGroups" target="_blank" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
+
+            <header class="top-header">
+                <h2 class="alt"><strong>Scotland PHP</strong> provides information and content<br/>
+                    about the growing Scottish PHP community.</h2>
+
+                <p>Start your habit of continuous learning by joining your local community!</p>
+            </header>
+
+            <footer>
+                <a href="#groups" class="button scrolly">Check out the user groups</a>
+            </footer>
+
+        </div>
+    </section>
+
+    <!-- User Groups -->
+    <section id="groups" class="two">
+        <div class="container">
+
+            <header>
+                <h2>PHP User Groups</h2>
+            </header>
+
+            <p>
+                Currently, there are 4 user groups in Scotland in the major Scottish cities.<br>
+                Find out which one is close to you, but don't forget your are welcome in any of them, anytime!
+            </p>
+            <div class="row">
+                <article class="6u 12u$(mobile) item">
+                    <div id="map"></div>
+                </article>
+                <article class="3u 12u$(mobile) item">
+                    <a href="http://www.aberdeenphp.co.uk/" target="_blank" class="image fit"><img src="aberdeenphp.png" alt=""/></a>
+                    <header>
+                        <h3><a href="http://www.aberdeenphp.co.uk/" target="_blank">Aberdeen</a></h3>
+                        <ul class="icons">
+                            <li><a href="http://www.aberdeenphp.co.uk/" target="_blank" class="icon fa-external-link"><span class="label">Website</span></a></li>
+                            <li><a href="https://twitter.com/AberdeenPhp" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://opentechcalendar.co.uk/group/272-aberdeenphp" target="_blank" class="icon fa-calendar"><span class="label">Open Tech Calendar</span></a></li>
+                        </ul>
+                    </header>
+                </article>
+                <article class="3u 12u$(mobile) item">
+                    <a href="http://dundeephp.co.uk/" target="_blank" class="image fit"><img src="dundeephp.png" alt=""/></a>
+                    <header>
+                        <h3><a href="http://dundeephp.co.uk/" target="_blank">Dundee</a></h3>
+                        <ul class="icons">
+                            <li><a href="http://dundeephp.co.uk/" target="_blank" class="icon fa-external-link"><span class="label">Website</span></a></li>
+                            <li><a href="https://twitter.com/DundeePHP" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="http://opentechcalendar.co.uk/group/296-dundee-php" target="_blank" class="icon fa-calendar"><span class="label">Open Tech Calendar</span></a></li>
+                        </ul>
+                    </header>
+                </article>
+                <article class="3u 12u$(mobile) item">
+                    <a href="http://www.edpug.co.uk/" target="_blank" class="image fit">
+                        <img src="edinburghphp.png" alt="Edpug logo"/>
+                    </a>
+                    <header>
+                        <h3><a href="http://www.edpug.co.uk/" target="_blank">EdPUG <small>(Edinburgh)</small></a></h3>
+                        <ul class="icons">
+                            <li><a href="http://www.edpug.co.uk/" target="_blank" class="icon fa-external-link"><span class="label">Website</span></a></li>
+                            <li><a href="https://twitter.com/edpug" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://opentechcalendar.co.uk/group/17-edpug-edinburgh-php-user-group" target="_blank" class="icon fa-calendar"><span class="label">Open Tech Calendar</span></a></li>
+                        </ul>
+                    </header>
+                </article>
+                <article class="3u 12u$(mobile) item">
+                    <a href="http://glasgowphp.co.uk/" target="_blank" class="image fit"><img src="glasgowphp.png" alt=""/></a>
+                    <header>
+                        <h3><a href="http://glasgowphp.co.uk/" target="_blank">Glasgow</a></h3>
+                        <ul class="icons">
+                            <li><a href="http://glasgowphp.co.uk/" target="_blank" class="icon fa-external-link"><span class="label">Website</span></a></li>
+                            <li><a href="https://twitter.com/glasgowphp" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://opentechcalendar.co.uk/group/203-glasgowphp" target="_blank" class="icon fa-calendar"><span class="label">Open Tech Calendar</span></a></li>
+                        </ul>
+                    </header>
+                </article>
+                <article class="6u 12u$(mobile) item">
+                    <a href="http://www.dragonbe.com/2014/02/theres-no-php-user-group-here.html" target="_blank" class="image fit"><span class="icon fa-lightbulb-o fa-4"></span></a>
+                    <header>
+                        <h3><a href="http://www.dragonbe.com/2014/02/theres-no-php-user-group-here.html" target="_blank">Start your own!</a></h3>
+                    </header>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Upcoming events -->
+    <section id="events" class="three">
+        <div id="eventslist" class="container">
+
+            <header>
+                <h2>Upcoming Events</h2>
+            </header>
+
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <!--<section id="sponsors" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Sponsors</h2>
+            </header>
+
+            <p>Sponsors have a central role in the community, helping us to organise these events. Let's give them our support as well!</p>
+
+            <a href="#" class="image featured"><img src="pic08.jpg" alt=""/></a>
+
+            <p>If you want to sponsor any of our user groups or want to organise an event with us, please feel free to <a href="#contact">contact us</a>.</p>
+
+        </div>
+    </section>-->
+
+    <!-- Media -->
+    <!--<section id="media" class="two">
+        <div class="container">
+
+            <header>
+                <h2>Photos and Videos</h2>
+            </header>
+
+            <p>Aiming to provide the best resources to our fellow developers, we will try to record and publish as many event as we can.</p>
+
+            <div class="row">
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic02.jpg" alt=""/></a>
+                        <header>
+                            <h3>Ipsum Feugiat</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic03.jpg" alt=""/></a>
+                        <header>
+                            <h3>Rhoncus Semper</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic04.jpg" alt=""/></a>
+                        <header>
+                            <h3>Magna Nullam</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic05.jpg" alt=""/></a>
+                        <header>
+                            <h3>Natoque Vitae</h3>
+                        </header>
+                    </article>
+                </div>
+                <div class="4u$ 12u$(mobile)">
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic06.jpg" alt=""/></a>
+                        <header>
+                            <h3>Dolor Penatibus</h3>
+                        </header>
+                    </article>
+                    <article class="item">
+                        <a href="#" class="image fit"><img src="pic07.jpg" alt=""/></a>
+                        <header>
+                            <h3>Orci Convallis</h3>
+                        </header>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
+
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <p>
+                Any question, comment or suggestion are welcome. Please use the form below to get in touch, we'll get back to you as soon as we can!
+            </p>
+
+            <form method="post" action="https://formspree.io/info@scotlandphp.co.uk">
+                <div class="row">
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name"></div>
+                    <div class="6u$ 12u$(mobile)"><input type="email" name="_replyto" placeholder="Email"></div>
+                    <div class="12u$">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="12u$">
+                        <input type="hidden" name="_subject" value="Contact from ScotlandPHP website">
+                        <input type="hidden" name="_next" value="https://www.scotlandphp.co.uk/email-confirm.html">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Speaker -->
+    <section id="speaker" class="two">
+        <div class="container">
+            <header>
+                <h2>Become a speaker</h2>
+            </header>
+
+            <p>We are planning to install an instance of <a href="https://github.com/opencfp/opencfp" target="_blank">OpenCFP</a> soon.</p>
+            <p>For now, please consider using the <a href="#contact">contact form</a> and tell us where and when you want to speak, we'll put you in touch with the right person!</p>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; <a href="https://www.scotlandphp.co.uk">Scotland PHP</a>. All rights reserved.</li>
+        <li>Design: adaptation from <a href="http://html5up.net">HTML5 UP</a> template by <a href="https://www.engineor.com" target="_blank">Engineor</a></li>
+    </ul>
+
+</div>
+
+<!-- build:js scripts.<%= new Date().getTime() %>.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="jquery.scrolly.min.js"></script>
+<script src="jquery.scrollzer.min.js"></script>
+<script src="skel.min.js"></script>
+<script src="util.js"></script>
+<script src="main.js"></script>
+<script src="home.js"></script>
+<!-- endbuild -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+
+<!--[if lte IE 8]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</body>
+</html>

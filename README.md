@@ -1,6 +1,47 @@
 # Scotland PHP Website
 Aiming to create a larger community on top of local Scottish PHP user groups, this website contains information about the groups and aims to provide high quality resources such as video recording of the talks.
 
+## Usage
+Clone the project.
+
+```
+git clone git@github.com:scotlandphp/website.git scotlandphp-website
+```
+
+Enter the folder.
+
+```
+cd scotlandphp-website
+```
+
+Use composer to install dependencies
+
+```
+php -r "readfile('https://getcomposer.org/installer');" | php
+```
+
+```
+php composer.phar install
+```
+
+### Generate the development version
+
+```
+php vendor/bin/robo build
+```
+
+### Generate the live version
+
+```
+php vendor/bin/robo build --dist
+```
+
+### Use the watcher for development
+
+```
+php vendor/bin/robo watch
+```
+
 ## Contributing
 There are no specific rules for contributing as it is a fairly simple website.
 
@@ -9,7 +50,7 @@ Please fill up issues before creating PRs, and try to link your commits to the s
 You can also help us create milestones by creating issues and proposing milestone plans or discussions.
 
 ## Deployment
-We currently deploy the website on Runabove Object Storage (Openshift Swift Object Storage) with a flat file structure (no directories at all). The project must therefore been built before deployment (using `grunt build`) and the files from the `dist/` directory only are deployed.
+We currently deploy the website on OVH Object Storage (Openstack Swift Object Storage) with a flat file structure (no directories at all). The project must therefore been built before deployment (using `vendor/bin/robo build`) and the files from the `dist/` directory only are deployed.
 
 The website is served over **https** thanks to Cloudflare that allows us to use a flexible SSL (connection between Cloudflare and the object storage is not secured basically).
 
