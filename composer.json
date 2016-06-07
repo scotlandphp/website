@@ -25,12 +25,12 @@
     ],
     "require": {},
     "require-dev": {
-        "codegyre/robo": "*@dev",
-        "leafo/scssphp": "~0.1",
+        "codegyre/robo": "dev-master",
+        "leafo/scssphp": "dev-master",
         "patchwork/jsqueeze": "~1.0",
         "natxet/CssMin": "~3.0"
     },
     "scripts": {
-        "exec": "vendor/bin/robo"
+        "task": "vendor/bin/robo"
     }
 }

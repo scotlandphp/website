@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 /*
 	Prologue by HTML5 UP
@@ -1406,7 +1406,6 @@ form textarea {
   position: relative;
   -webkit-appearance: none;
   display: block;
-  border: 0;
   outline: 0;
   background: #fff;
   background: rgba(255, 255, 255, 0.75);
@@ -1488,8 +1487,8 @@ table {
       text-align: left;
       padding: 0.5em 1em 0.5em 1em;
       color: #fff;
-      background-image: url("../css/images/overlay.png");
-      background-color: #222729; }
+      background-color: #222729;
+      background-image: url("overlay.png"); }
     table.default thead {
       background: #444;
       color: #fff; }
@@ -1509,9 +1508,9 @@ button,
   text-decoration: none;
   padding: 0.75em 2.5em 0.75em 2.5em;
   background-color: #2daeff;
+  background-image: url("overlay.png");
   border: 0;
   cursor: pointer;
-  background-image: url("../css/images/overlay.png");
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
@@ -1593,8 +1592,8 @@ button,
   width: 300px;
   height: 100%;
   color: #fff;
-  background-image: url("../css/images/overlay.png");
   background-color: #222629;
+  background-image: url("overlay.png");
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
   text-align: right; }
   #header .top {
@@ -1709,7 +1708,7 @@ button,
     padding: 4em 0;
     box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
     text-align: center;
-    background-image: url("../css/images/overlay.png"); }
+    background-image: url("overlay.png"); }
     #main > section.dark {
       color: #ddd;
       color: rgba(255, 255, 255, 0.75); }
@@ -1729,7 +1728,7 @@ button,
       background-position: center center; }
     #main > section.one {
       background-color: #81918E;
-      background-image: url("../../images/landscape.jpg");
+      background-image: url("landscape.jpg");
       min-height: 100vh; }
     #main > section.two {
       background-color: #f5fafa; }
@@ -1775,7 +1774,7 @@ button,
     padding: 0 2em 0 2em; }
 
   .row {
-    margin: -20px 0px -1px 0px; }
+    margin: -20px 0px -1px 0; }
 
   /* List */
   ul.icons li a {
@@ -1832,7 +1831,7 @@ button,
     padding: 0 2em 0 2em; }
 
   .row {
-    margin: -20px 0px -1px 0px; }
+    margin: -20px 0px -1px 0; }
 
   /* Item */
   .item {
@@ -1863,11 +1862,10 @@ button,
     overflow-y: auto;
     position: fixed;
     top: 0;
-    width: 275px;
     z-index: 10002;
     width: 275px;
-    background-image: url("../css/images/overlay.png");
     background-color: #222729;
+    background-image: url("overlay.png");
     box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125); }
     #header .top {
       position: relative; }
@@ -1918,7 +1916,6 @@ button,
         content: '\f0c9';
         color: #fff;
         font-size: 18px;
-        line-height: 2.25em;
         background: rgba(128, 136, 144, 0.5);
         border-radius: 0.35em;
         text-align: center;
@@ -1983,7 +1980,7 @@ button,
     padding: 0 15px 0 15px; }
 
   .row {
-    margin: -20px 0px -1px 0px; }
+    margin: -20px 0px -1px 0; }
 
   /* List */
   ul.icons a {
@@ -1994,7 +1991,7 @@ button,
   #main > section {
     padding: 2em 0; }
   #main section.cover {
-    padding: 4em 0em; }
+    padding: 4em 0; }
     #main section.cover header {
       padding: 0 1em; } }
 @media screen and (max-width: 736px) and (min-height: 768px) {
@@ -2041,8 +2038,8 @@ button,
 #email-confirm {
   height: 100vh;
   color: #fff;
-  background-image: url("../css/images/overlay.png");
-  background-color: #222629; }
+  background-color: #222629;
+  background-image: url("overlay.png"); }
   #email-confirm .image {
     position: fixed;
     top: 20%;
