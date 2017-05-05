@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var map = L.map('map').setView([56.8491047,-4.2255712], 6);
+    var map = L.map('map', {'scrollWheelZoom': false}).setView([56.8491047,-4.2255712], 6);
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.png', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.arcgis.com">ArcGIS</a>',
         maxZoom: 18
