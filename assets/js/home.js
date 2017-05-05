@@ -9,9 +9,9 @@ $(document).ready(function(){
     var markerDu = L.marker([56.4561461,-2.9833701]).addTo(map);
     var markerAb = L.marker([57.145627,-2.108084]).addTo(map);
 
-    markerEd.bindPopup("<h3>EdPUG</h3><strong>Blonde Digital Ltd</strong><br>86 Commercial Quay<br>Edinburgh EH6 6LX");
-    markerGl.bindPopup("<h3>Glasgow PHP</h3><strong>STV Group plc</strong><br>Govan Rd<br>Pacific Quay<br>Glasgow, Lanarkshire G51 1PQ");
-    markerDu.bindPopup("<h3>Dundee PHP</h3><strong>Drouthy's</strong><br>142 -146 Perth Rd<br>Dundee, Angus DD1 4JW");
+    markerEd.bindPopup("<h3>EdPUG</h3><strong>CivTech, CodeBase</strong><br>Level L<br>38 Castle Terrace<br>Edinburgh EH3 9DZ");
+    markerGl.bindPopup("<h3>Glasgow PHP</h3><strong>Inviqa</strong><br>Forsyth House<br>111 Union Street<br>Glasgow G1 3TA");
+    markerDu.bindPopup("<h3>Dundee PHP</h3><strong>Solarwinds MSP</strong><br>The Big Ideas Room<br>The Vision Building<br>20 Greenmarket<br>Dundee DD1 4QB");
     markerAb.bindPopup("<h3>Aberdeen PHP</h3><strong>Fifth Ring Ltd</strong><br>St Marys Court<br> 47-49 Huntly St<br> Aberdeen AB10 1TH");
 
     var groups = ['272', '296', '17', '203'];
