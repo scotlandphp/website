@@ -1345,3 +1345,40 @@ button,
         }
     }
 }
+
+#companieslistdata {
+    .company {
+        margin: 20px 0;
+        .title {
+
+        }
+        .description-less {
+            font-size: .7em;
+            line-height: 2em;
+            text-align: justify;
+        }
+        .description-more {
+            font-size: .7em;
+            line-height: 2em;
+            text-align: justify;
+            display: none;
+        }
+        .address {
+            font-size: .7em;
+            line-height: 2em;
+            text-align: right;
+        }
+        .webpage {
+            font-size: .7em;
+            line-height: 2em;
+            text-align: right;
+        }
+        .jobs_webpage {
+            font-size: .7em;
+            line-height: 2em;
+            text-align: right;
+        }
+    }
+}
+
+
