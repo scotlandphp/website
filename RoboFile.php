@@ -9,7 +9,6 @@ class RoboFile extends \Robo\Tasks
     /**
      * Build the project (dev by default)
      *
-     * @param array $opts
      * @option $dist Set whether buildDist should be executed
      */
     public function build($opts = ['dist|d' => false])
