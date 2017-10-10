@@ -76,11 +76,11 @@ function TechInScotlandCompanies(data) {
         if (data.data[i]['description']) {
             html += '<div class="description-less">';
             html += escapeHTML(data.data[i]['description'], 200, false);
-            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').hide(); $(this).parents(\'.company\').children(\'.description-more\').show(); return false;">(more)</a>'
+            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').hide(); $(this).parents(\'.company\').children(\'.description-more\').show(); return false;"> (more)</a>'
             html += '</div>';
             html += '<div class="description-more">';
             html += escapeHTML(data.data[i]['description'], 0, true);
-            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').show(); $(this).parents(\'.company\').children(\'.description-more\').hide(); return false;">(less)</a>'
+            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').show(); $(this).parents(\'.company\').children(\'.description-more\').hide(); return false;"> (less)</a>'
             html += '</div>';
         }
         if (data.data[i]['address']) {
