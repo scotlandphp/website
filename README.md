@@ -2,6 +2,10 @@
 Aiming to create a larger community on top of local Scottish PHP user groups, this website contains information about the groups and aims to provide high quality resources such as video recording of the talks.
 
 ## Usage
+
+You will need an environment with Git, PHP and SASS already installed.
+
+
 Clone the project.
 
 ```
