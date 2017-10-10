@@ -25,7 +25,7 @@
     ],
     "require": {},
     "require-dev": {
-        "codegyre/robo": "dev-master",
+        "consolidation/robo": "1.1.*",
         "leafo/scssphp": "dev-master",
         "patchwork/jsqueeze": "~1.0",
         "natxet/CssMin": "~3.0"
