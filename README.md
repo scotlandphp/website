@@ -1,7 +1,62 @@
 # Scotland PHP Website
 Aiming to create a larger community on top of local Scottish PHP user groups, this website contains information about the groups and aims to provide high quality resources such as video recording of the talks.
 
-## Usage
+## Usage with Vagrant
+
+You will need an environment with Git, Vagrant and Virtualbox installed.
+
+
+Clone the project.
+
+```
+git clone git@github.com:scotlandphp/website.git scotlandphp-website
+```
+
+Enter the folder.
+
+```
+cd scotlandphp-website
+```
+
+Start the Vagrant box, and connect to it.
+
+```
+vagrant up
+vagrant ssh
+```
+
+Use composer to install dependencies
+
+```
+composer install
+```
+
+### Generate the development version
+
+```
+php vendor/bin/robo build
+```
+
+### Generate the live version
+
+```
+php vendor/bin/robo build --dist
+```
+
+### Use the watcher for development
+
+```
+php vendor/bin/robo watch
+```
+
+When finished, exit the vagrant box and stop it
+
+```
+exit
+vagrant halt
+```
+
+## Usage without Vagrant
 
 You will need an environment with Git, PHP and SASS already installed.
 
