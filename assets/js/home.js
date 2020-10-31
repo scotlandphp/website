@@ -67,33 +67,3 @@ function escapeHTML(str, maxLength, newLine) {
     return newLine ? out.replace(/\n/g,'<br>') : out;
 }
 
-function TechInScotlandCompanies(data) {
-    var html = '';
-
-    for(i in data.data) {
-        html += '<div class="company">';
-        html += '<div class="title">'+escapeHTML(data.data[i]['title'],0,false)+'</div>';
-        if (data.data[i]['description']) {
-            html += '<div class="description-less">';
-            html += escapeHTML(data.data[i]['description'], 200, false);
-            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').hide(); $(this).parents(\'.company\').children(\'.description-more\').show(); return false;"> (more)</a>'
-            html += '</div>';
-            html += '<div class="description-more">';
-            html += escapeHTML(data.data[i]['description'], 0, true);
-            html += '<a href="#" onclick="$(this).parents(\'.company\').children(\'.description-less\').show(); $(this).parents(\'.company\').children(\'.description-more\').hide(); return false;"> (less)</a>'
-            html += '</div>';
-        }
-        if (data.data[i]['address']) {
-            html += '<div class="address">'+escapeHTML(data.data[i]['address'],0,false)+'</div>';
-        }
-        if (data.data[i]['webpage']) {
-            html += '<div class="webpage">Find out more: <a href="'+escapeHTML(data.data[i]['webpage'],0,false)+'">'+escapeHTML(data.data[i]['webpage'])+'</a></div>';
-        }
-        if (data.data[i]['jobs_webpage']) {
-            html += '<div class="jobs_webpage">Look for jobs: <a href="'+escapeHTML(data.data[i]['jobs_webpage'],0,false)+'">'+escapeHTML(data.data[i]['jobs_webpage'])+'</a></div>';
-        }
-        html += '</div>';
-    }
-
-    $('#companieslistdata').html(html);
-}
