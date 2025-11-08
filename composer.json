@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "support": {
-        "email": "thomas@engineor.com",
+        "email": "hello@tdutrion.fr",
         "issues": "https://github.com/scotlandphp/website/issues",
         "wiki": "https://github.com/scotlandphp/website/wiki",
         "source": "https://github.com/scotlandphp/website"
@@ -12,14 +12,12 @@
     "authors": [
         {
             "name": "Thomas Dutrion",
-            "email": "thomas@engineor.com",
-            "homepage": "https://www.engineor.com",
+            "email": "hello@tdutrion.fr",
+            "homepage": "https://tdutrion.fr",
             "role": "Developer"
         },
         {
             "name": "Aline Delvallé",
-            "email": "aline@engineor.com",
-            "homepage": "https://www.engineor.com",
             "role": "Developer"
         }
     ],
