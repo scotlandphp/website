@@ -28,7 +28,7 @@
         "consolidation/robo": "1.1.*",
         "leafo/scssphp": "dev-master",
         "patchwork/jsqueeze": "~1.0",
-        "natxet/CssMin": "~3.0"
+        "natxet/cssmin": "~3.0"
     },
     "scripts": {
         "task": "vendor/bin/robo"

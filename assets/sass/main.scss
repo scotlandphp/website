@@ -1,8 +1,7 @@
-@charset "UTF-8";
-
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
+@use 'libs/vars';
+@use 'libs/functions' as *;
+@use 'libs/mixins' as *;
+@use "libs/skel" as *;
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
@@ -12,8 +11,6 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-@import "libs/skel";
 
 @include skel-breakpoints((
     wide: '(min-width: 961px) and (max-width: 1880px)',
@@ -1019,7 +1016,8 @@ button,
 
     #header {
         @include vendor('backface-visibility', 'hidden');
-        @include vendor('transform', 'translateX(#{_size(header) * -1})');
+        $header-width: _size(header);
+        @include vendor('transform', 'translateX(#{-$header-width})');
         @include vendor('transition', ('transform #{_duration(header)} ease'));
         display: block;
         height: 100%;
@@ -1345,4 +1343,3 @@ button,
         }
     }
 }
-
