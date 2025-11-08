@@ -23,7 +23,9 @@
             "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "henrikbjorn/lurker": "^1.2"
+    },
     "require-dev": {
         "consolidation/robo": "1.1.*",
         "leafo/scssphp": "dev-master",
